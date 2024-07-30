@@ -1,0 +1,4 @@
+category_id,name,price,quantity,description,images
+1,Product 1,10.99,100,Description 1,"image1.jpg,image2.jpg"
+1,Product 2,15.99,150,Description 2,"image3.jpg,image4.jpg"
+1,Product 3,20.99,200,Description 3,"image5.jpg,image6.jpg"
