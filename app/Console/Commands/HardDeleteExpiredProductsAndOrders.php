@@ -20,7 +20,7 @@ class HardDeleteExpiredProductsAndOrders extends Command
 
     public function handle()
     {
-        $tenMinutesAgo = Carbon::now()->everyTenMinutes();
+        $tenMinutesAgo = Carbon::now()->subMinutes(1);
 
         // Get the product IDs of soft-deleted products older than 10 minutes
         $softDeletedProducts = Product::onlyTrashed()
