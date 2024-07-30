@@ -60,50 +60,6 @@ class CartController extends Controller
         return redirect()->route('cart.index')->with('success', 'Item removed!');
     }
 
-    // public function checkout(Request $request)
-    // {
-    //     if (!auth()->check()) {
-    //         return redirect()->route('login')->with('error', 'You must be logged in to place an order.');
-    //     }
-
-    //     $cart = session()->get('cart', []);
-    //     if (empty($cart)) {
-    //         return redirect()->route('cart.index')->with('error', 'Your cart is empty.');
-    //     }
-
-    //     $subtotal = array_sum(array_map(function($item) {
-    //         return $item['price'] * $item['quantity'];
-    //     }, $cart));
-
-    //     $gst = $subtotal * 0.18;
-    //     $totalWithGst = $subtotal + $gst;
-
-    //     // Create the order
-    //     $order = new Order();
-    //     $order->user_id = auth()->id();
-    //     $order->subtotal = $subtotal;
-    //     $order->gst = $gst;
-    //     $order->total_price = $totalWithGst;
-    //     $order->payment_method = 'COD';
-    //     $order->status = 'Pending';
-    //     $order->save();
-
-    //     // Save order items
-    //     foreach ($cart as $id => $details) {
-    //         $order->items()->create([
-    //             'product_id' => $id,
-    //             'quantity' => $details['quantity'],
-    //             'price' => $details['price'],
-    //             'total' => $details['quantity'] * $details['price']
-    //         ]);
-    //     }
-
-    //     // Clear the cart
-    //     session()->forget('cart');
-
-    //     return redirect()->route('cart.index')->with('success', 'Order placed successfully! Your order will be processed soon.');
-    // }
-
     public function checkout(Request $request)
     {
         // Check if user is logged in
@@ -156,19 +112,6 @@ class CartController extends Controller
         return redirect()->route('cart.index')->with('success', 'Order placed successfully! Your order will be processed soon.');
     }
     
-    // public function showCheckoutPage()
-    // {
-    //     $cart = session()->get('cart', []);
-    //     $subtotal = array_sum(array_map(function($item) {
-    //         return $item['price'] * $item['quantity'];
-    //     }, $cart));
-
-    //     $gst = $subtotal * 0.18;
-    //     $totalWithGst = $subtotal + $gst;
-
-    //     return view('cart.checkout', compact('cart', 'subtotal', 'gst', 'totalWithGst'));
-    // }
-
     public function showCheckoutPage()
     {
         // Get cart from session

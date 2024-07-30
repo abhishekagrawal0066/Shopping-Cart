@@ -28,22 +28,6 @@ use App\Http\Controllers\OrderController;
 // });
 
 Route::middleware('admin')->group(function(){
-    // Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
-    // Route::resource('/admin/categories', CategoryController::class);
-    // Route::get('/admin/getUsers', [UserController::class, 'getUsers'])->name('users.getUsers');
-    // Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
-    // Route::get('/orders-data', [OrderController::class, 'getOrdersData'])->name('orders.data');
-    // Route::delete('/orders/{id}', [OrderController::class, 'destroy'])->name('orders.destroy');
-    // Route::post('products/import', [ProductController::class, 'import'])->name('products.import');
-    // Route::get('/admin/users', [UserController::class, 'index'])->name('users.index');
-    // Route::get('/admin/users/data', [UserController::class, 'getUsers'])->name('users.data');
-    // Route::delete('/admin/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
-    // Route::post('users/{id}/restore', [UserController::class, 'restore'])->name('users.restore');
-    // Route::resource('/admin/products', ProductController::class);
-    // Route::delete('/admin/products/{product}/soft-delete', [ProductController::class, 'softDelete'])->name('products.destroySoft');
-    // // Hard delete route
-    // Route::delete('/admin/products/{product}/hard-delete', [ProductController::class, 'hardDelete'])->name('products.destroyHard');
-
     Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
     Route::resource('/admin/categories', CategoryController::class);
     Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
@@ -57,7 +41,6 @@ Route::middleware('admin')->group(function(){
     Route::delete('/admin/products/{product}/soft-delete', [ProductController::class, 'destroySoft'])->name('products.destroySoft');
     Route::delete('/admin/products/{product}/hard-delete', [ProductController::class, 'destroyHard'])->name('products.destroyHard');
     Route::post('/admin/products/{product}/restore', [ProductController::class, 'restore'])->name('products.restore');
-    // Route::post('/admin/products/upload-images', [ProductController::class, 'uploadImages'])->name('products.uploadImages');
     Route::post('/products/uploadImages', [ProductController::class, 'uploadImages'])->name('products.uploadImages');
 
     Route::resource('/admin/products', ProductController::class);

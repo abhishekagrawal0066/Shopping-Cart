@@ -84,26 +84,6 @@
                     <div data-i18n="Without menu">Categories List</div>
                   </a>
                 </li>
-                {{-- <li class="menu-item">
-                  <a href={{ route('fssai.create') }} class="menu-link">
-                    <div data-i18n="Without navbar">Add Fssai License</div>
-                  </a>
-                </li> --}}
-                {{-- <li class="menu-item">
-                  <a href={{ route('latTwoMonthData') }} class="menu-link">
-                    <div data-i18n="Container">Renewal List</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href={{ route('fssai.csv') }} class="menu-link">
-                    <div data-i18n="Fluid">CSV Uploade</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="layouts-blank.html" class="menu-link">
-                    <div data-i18n="Blank">Blank</div>
-                  </a>
-                </li> --}}
               </ul>
             </li>
             <!-- Pages -->
@@ -148,35 +128,5 @@
                 </li>
               </ul>
             </li>
-            {{-- <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-                <div data-i18n="Authentications">Authentications</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="auth-login-basic.html" class="menu-link" target="_blank">
-                    <div data-i18n="Basic">Login</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="auth-register-basic.html" class="menu-link" target="_blank">
-                    <div data-i18n="Basic">Register</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
-                    <div data-i18n="Basic">Forgot Password</div>
-                  </a>
-                </li>
-              </ul>
-            </li> --}}
-            <!-- Components -->
-            {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> --}}
-            <!-- Cards -->
-            <!-- Forms & Tables -->
-
-            <!-- Misc -->
-            {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li> --}}
           </ul>
         </aside>

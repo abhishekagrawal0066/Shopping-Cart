@@ -73,12 +73,6 @@
                     <button type="submit" class="btn btn-primary">Upload Images</button>
                 </div>
             </form>
-            {{-- <form id="uploadImagesForm" action="{{ route('products.uploadImages') }}" method="POST" enctype="multipart/form-data">
-                @csrf
-                <input type="hidden" name="product_id" value="1">
-                <input type="file" name="images[]" multiple>
-                <button type="submit" class="btn btn-primary">Upload Images</button>
-            </form> --}}
         </div>
     </div>
 </div>

@@ -146,14 +146,13 @@ class ProductController extends Controller
 
         $product->forceDelete();
         return response()->json(['success' => true, 'message' => 'Product Soft Deleted  successfully.']);
-        // return redirect()->route('products.index')->with('success', 'Product and associated images deleted successfully.');
+     
     }
 
     public function destroySoft(Product $product)
     {
         $product->delete();
         return response()->json(['success' => true, 'message' => 'Product Deleted successfully.']);
-        // return redirect()->route('products.index')->with('success', 'Product soft deleted successfully.');
     }
 
     public function restore($product)

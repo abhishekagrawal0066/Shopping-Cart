@@ -124,11 +124,6 @@
                     placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                     aria-describedby="password" required autocomplete="new-password"/>
                   <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
-                    {{-- @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror --}}
                 </div>
               </div>
               <button class="btn btn-primary d-grid w-100" type="submit">Sign up</button>

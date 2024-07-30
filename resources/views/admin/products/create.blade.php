@@ -77,8 +77,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="name" class="description">Product Description</label>
-                            <textarea class="form-control"  name="description" >
-                              {{old('description') }}
+                            <textarea class="form-control"  name="description" >@isset($product){{$product->description}}@endisset
+                            {{old('description') }}
                             </textarea>
                             @error('description')
                                 <span class="text-danger">{{ $message }}</span>
